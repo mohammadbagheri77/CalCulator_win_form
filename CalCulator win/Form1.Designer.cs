@@ -58,6 +58,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_ce = new System.Windows.Forms.Button();
             this.btn_c = new System.Windows.Forms.Button();
+            this.btn_sin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -176,6 +177,7 @@
             this.tableLayoutPanel6.Controls.Add(this.bnt_do, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.btn_ce, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.btn_c, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btn_sin, 1, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
@@ -464,6 +466,17 @@
             this.btn_c.Text = "C";
             this.btn_c.UseVisualStyleBackColor = true;
             // 
+            // btn_sin
+            // 
+            this.btn_sin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_sin.Location = new System.Drawing.Point(68, 50);
+            this.btn_sin.Name = "btn_sin";
+            this.btn_sin.Size = new System.Drawing.Size(59, 41);
+            this.btn_sin.TabIndex = 3;
+            this.btn_sin.Text = "Sin()";
+            this.btn_sin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,6 +532,7 @@
         private System.Windows.Forms.Button bnt_do;
         private System.Windows.Forms.Button btn_ce;
         private System.Windows.Forms.Button btn_c;
+        private System.Windows.Forms.Button btn_sin;
     }
 }
 
