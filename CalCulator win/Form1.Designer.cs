@@ -37,6 +37,9 @@
             this.lbl_mashinhsab = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.bnt_do = new System.Windows.Forms.Button();
+            this.btn_ce = new System.Windows.Forms.Button();
+            this.btn_c = new System.Windows.Forms.Button();
+            this.btn_sin = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -56,9 +59,6 @@
             this.btn_jaam = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btn_ce = new System.Windows.Forms.Button();
-            this.btn_c = new System.Windows.Forms.Button();
-            this.btn_sin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -197,6 +197,42 @@
             this.bnt_do.Text = "0.";
             this.bnt_do.UseVisualStyleBackColor = true;
             this.bnt_do.Click += new System.EventHandler(this.Bnt_do_Click);
+            // 
+            // btn_ce
+            // 
+            this.btn_ce.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ce.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_ce.Location = new System.Drawing.Point(3, 3);
+            this.btn_ce.Name = "btn_ce";
+            this.btn_ce.Size = new System.Drawing.Size(59, 41);
+            this.btn_ce.TabIndex = 1;
+            this.btn_ce.Text = "CE";
+            this.btn_ce.UseVisualStyleBackColor = true;
+            this.btn_ce.Click += new System.EventHandler(this.Btn_ce_Click);
+            // 
+            // btn_c
+            // 
+            this.btn_c.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_c.Location = new System.Drawing.Point(68, 3);
+            this.btn_c.Name = "btn_c";
+            this.btn_c.Size = new System.Drawing.Size(59, 41);
+            this.btn_c.TabIndex = 2;
+            this.btn_c.Text = "C";
+            this.btn_c.UseVisualStyleBackColor = true;
+            this.btn_c.Click += new System.EventHandler(this.Btn_c_Click);
+            // 
+            // btn_sin
+            // 
+            this.btn_sin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_sin.Location = new System.Drawing.Point(68, 50);
+            this.btn_sin.Name = "btn_sin";
+            this.btn_sin.Size = new System.Drawing.Size(59, 41);
+            this.btn_sin.TabIndex = 3;
+            this.btn_sin.Text = "Sin()";
+            this.btn_sin.UseVisualStyleBackColor = true;
+            this.btn_sin.Click += new System.EventHandler(this.Btn_sin_Click);
             // 
             // tabControl1
             // 
@@ -443,39 +479,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btn_ce
-            // 
-            this.btn_ce.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ce.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_ce.Location = new System.Drawing.Point(3, 3);
-            this.btn_ce.Name = "btn_ce";
-            this.btn_ce.Size = new System.Drawing.Size(59, 41);
-            this.btn_ce.TabIndex = 1;
-            this.btn_ce.Text = "CE";
-            this.btn_ce.UseVisualStyleBackColor = true;
-            // 
-            // btn_c
-            // 
-            this.btn_c.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_c.Location = new System.Drawing.Point(68, 3);
-            this.btn_c.Name = "btn_c";
-            this.btn_c.Size = new System.Drawing.Size(59, 41);
-            this.btn_c.TabIndex = 2;
-            this.btn_c.Text = "C";
-            this.btn_c.UseVisualStyleBackColor = true;
-            // 
-            // btn_sin
-            // 
-            this.btn_sin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_sin.Location = new System.Drawing.Point(68, 50);
-            this.btn_sin.Name = "btn_sin";
-            this.btn_sin.Size = new System.Drawing.Size(59, 41);
-            this.btn_sin.TabIndex = 3;
-            this.btn_sin.Text = "Sin()";
-            this.btn_sin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

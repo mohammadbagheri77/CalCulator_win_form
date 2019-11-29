@@ -13,5 +13,6 @@ namespace CalCulator_win
         public string add_motgher;
         public double add_result;
         public bool is_por = false;
+        public bool sin = false;
     }
 }

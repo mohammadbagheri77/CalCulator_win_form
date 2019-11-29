@@ -22,6 +22,9 @@ namespace CalCulator_win
         public string add_dovom;
         public string add_motgher;
         public double add_result;
+        public double a;
+        public double b;
+        public bool sin = false;
         public bool is_por = false;
         public int count = 0;
 
@@ -211,9 +214,16 @@ namespace CalCulator_win
 
         private void Button15_Click(object sender, EventArgs e)
         {
+            struk_cash cash = new struk_cash();
 
+            if(sin == true)
+            {
+                a = Math.Sin((Convert.ToDouble(add_aval) * (Math.PI)) / 180);
+                lbl_mashinhsab.Text = a.ToString();
 
-            if (add_motgher == "/" && add_dovom != "0")
+             
+            }
+            else if (add_motgher == "/" && add_dovom != "0")
             {
 
                 double d1 = 0;
@@ -243,14 +253,27 @@ namespace CalCulator_win
                 }
             }
 
-            struk_cash cash = new struk_cash();
-
+            if(sin==true)
+            {
+                cash.add_aval = "sin(" + add_aval + ")=" + a;
+                cash.add_dovom = "";
+                cash.add_motgher = "";
+                cash.is_por = is_por;
+                cash.sin = sin;
+                cash.add_result = 0;
+                list_adad.Add(cash);
+                sin = false;
+            }
+            else
+            {
             cash.add_aval = add_aval;
             cash.add_dovom = add_dovom;
             cash.add_motgher = add_motgher;
             cash.add_result = add_result;
             cash.is_por = is_por;
             list_adad.Add(cash);
+            }
+            
 
             add_aval = "";
             add_dovom = "";
@@ -363,15 +386,23 @@ namespace CalCulator_win
             {
                 list_adad = JsonConvert.DeserializeObject<List<struk_cash>>(JsonFromCash);
             }
-
         }
 
         private void Btn_up_Click(object sender, EventArgs e)
         {
             if (count < list_adad.Count)
             {
+                if(list_adad[count].sin==true)
+                {
+                    lbl_mashinhsab.Text = list_adad[count].add_aval .ToString();
+                    count++;
+                }
+                else
+                {
                 lbl_mashinhsab.Text = list_adad[count].add_aval + list_adad[count].add_motgher + list_adad[count].add_dovom + "=" + Pub(Convert.ToDouble(list_adad[count].add_aval), Convert.ToDouble(list_adad[count].add_dovom), list_adad[count].add_motgher).ToString();
                 count++;
+
+                }
             }
             else
             {
@@ -436,6 +467,29 @@ namespace CalCulator_win
                 }
 
             }
+        }
+
+        private void Btn_ce_Click(object sender, EventArgs e)
+        {
+
+            add_dovom = "";
+            lbl_mashinhsab.Text = add_aval + add_motgher + add_dovom.ToString();
+        }
+
+        private void Btn_c_Click(object sender, EventArgs e)
+        {
+            add_aval = "";
+            add_dovom = "";
+            add_motgher = "";
+            is_por = false;
+            lbl_mashinhsab.Text = add_aval + add_motgher + add_dovom.ToString();
+        }
+
+        private void Btn_sin_Click(object sender, EventArgs e)
+        {
+            sin = true;
+            lbl_mashinhsab.Text = "Sin(n)".ToString();
+            Math.Sin((a * (Math.PI)) / 180);
         }
     }
 }
