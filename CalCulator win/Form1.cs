@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Numerics;
 
 namespace CalCulator_win
 {
@@ -29,8 +29,6 @@ namespace CalCulator_win
         public int count = 0;
 
         List<struk_cash> list_adad = new List<struk_cash>();
-
-
 
         private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -274,13 +272,10 @@ namespace CalCulator_win
             list_adad.Add(cash);
             }
             
-
             add_aval = "";
             add_dovom = "";
             add_result = 0;
             is_por = false;
-
-
 
         }
 
@@ -290,27 +285,27 @@ namespace CalCulator_win
             is_por = true;
             lbl_mashinhsab.Text = add_motgher + add_aval.ToString();
         }
-        private double Jaam(double FirstNumber, double SecondNumber)
+        private Double Jaam(Double FirstNumber, Double SecondNumber)
         {
-            double Result = FirstNumber + SecondNumber;
+            Double Result = FirstNumber + SecondNumber;
             return Result;
         }
-        private double Taf(double FirstNumber, double SecondNumber)
+        private Double Taf(Double FirstNumber, Double SecondNumber)
         {
-            double Result = FirstNumber - SecondNumber;
+            Double Result = FirstNumber - SecondNumber;
             return Result;
         }
-        private double Zarb(double FirstNumber, double SecondNumber)
+        private Double Zarb(Double FirstNumber, Double SecondNumber)
         {
-            double Result = FirstNumber * SecondNumber;
+            Double Result = FirstNumber * SecondNumber;
             return Result;
         }
-        private double Tagh(double FirstNumber, double SecondNumber)
+        private Double Tagh(Double FirstNumber,Double SecondNumber)
         {
-            double Result = FirstNumber / SecondNumber;
+            Double Result = FirstNumber / SecondNumber;
             return Result;
         }
-        public double Pub(double FirstNumber, double SecondNumber, string str)
+        public Double Pub(Double FirstNumber, Double SecondNumber, string str)
         {
             if (str == "+" || str == "jaam")
             {
@@ -331,7 +326,6 @@ namespace CalCulator_win
 
             return -200000;
         }
-
 
         public static int SaveCash(List<struk_cash> TOCASH)
         {
