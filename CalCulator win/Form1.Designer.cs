@@ -34,7 +34,6 @@
             this.btn_up = new System.Windows.Forms.Button();
             this.btn_dw = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_mashinhsab = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.bnt_do = new System.Windows.Forms.Button();
             this.btn_ce = new System.Windows.Forms.Button();
@@ -59,6 +58,9 @@
             this.btn_jaam = new System.Windows.Forms.Button();
             this.btn_4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_mashinhsab = new System.Windows.Forms.Label();
+            this.btn_madle = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -67,6 +69,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -144,8 +147,8 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.29577F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.70422F));
-            this.tableLayoutPanel5.Controls.Add(this.lbl_mashinhsab, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(81, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -154,20 +157,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(710, 100);
             this.tableLayoutPanel5.TabIndex = 4;
-            // 
-            // lbl_mashinhsab
-            // 
-            this.lbl_mashinhsab.AutoSize = true;
-            this.lbl_mashinhsab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_mashinhsab.Font = new System.Drawing.Font("Lateef", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_mashinhsab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbl_mashinhsab.Location = new System.Drawing.Point(139, 0);
-            this.lbl_mashinhsab.Name = "lbl_mashinhsab";
-            this.lbl_mashinhsab.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbl_mashinhsab.Size = new System.Drawing.Size(568, 100);
-            this.lbl_mashinhsab.TabIndex = 3;
-            this.lbl_mashinhsab.Text = "محاسبه";
-            this.lbl_mashinhsab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel6
             // 
@@ -480,6 +469,46 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.683099F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.3169F));
+            this.tableLayoutPanel7.Controls.Add(this.lbl_mashinhsab, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btn_madle, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(139, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(568, 94);
+            this.tableLayoutPanel7.TabIndex = 5;
+            // 
+            // lbl_mashinhsab
+            // 
+            this.lbl_mashinhsab.AutoSize = true;
+            this.lbl_mashinhsab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_mashinhsab.Font = new System.Drawing.Font("Lateef", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_mashinhsab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_mashinhsab.Location = new System.Drawing.Point(58, 0);
+            this.lbl_mashinhsab.Name = "lbl_mashinhsab";
+            this.lbl_mashinhsab.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_mashinhsab.Size = new System.Drawing.Size(507, 94);
+            this.lbl_mashinhsab.TabIndex = 6;
+            this.lbl_mashinhsab.Text = "محاسبه";
+            this.lbl_mashinhsab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_madle
+            // 
+            this.btn_madle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_madle.Location = new System.Drawing.Point(3, 3);
+            this.btn_madle.Name = "btn_madle";
+            this.btn_madle.Size = new System.Drawing.Size(49, 88);
+            this.btn_madle.TabIndex = 7;
+            this.btn_madle.Text = "معادله";
+            this.btn_madle.UseVisualStyleBackColor = true;
+            this.btn_madle.Click += new System.EventHandler(this.Btn_madle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,11 +523,12 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -530,12 +560,14 @@
         private System.Windows.Forms.Button btn_4;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label lbl_mashinhsab;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button bnt_do;
         private System.Windows.Forms.Button btn_ce;
         private System.Windows.Forms.Button btn_c;
         private System.Windows.Forms.Button btn_sin;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label lbl_mashinhsab;
+        private System.Windows.Forms.Button btn_madle;
     }
 }
 

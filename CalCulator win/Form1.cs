@@ -485,5 +485,11 @@ namespace CalCulator_win
             lbl_mashinhsab.Text = "Sin(n)".ToString();
             Math.Sin((a * (Math.PI)) / 180);
         }
+
+        private void Btn_madle_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.ShowDialog();
+        }
     }
 }
